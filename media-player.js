@@ -1,10 +1,11 @@
-// Sample Media Player using HTML5's Media API
-// 
+//Modified media player JS - Most original code comes from credit below
+//with additions and revisions by Michael King, http://www.osc.org (c) 2014
+
 // Ian Devlin (c) 2012
 // http://iandevlin.com
 // http://twitter.com/iandevlin
-//
 // This was written as part of an article for the February 2013 edition of .net magazine (http://netmagazine.com/)
+
 
 // Wait for the DOM to be loaded before initialising the media player
 document.addEventListener("DOMContentLoaded", function() { initialiseMediaPlayer(); }, false);
