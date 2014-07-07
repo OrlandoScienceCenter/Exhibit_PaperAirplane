@@ -50,6 +50,7 @@ var totalvids = 9; // set for each one
 <body ONLOAD="resetTimer()">
 <div id="site_wrapper">
     <div id="innerContents">
+    <div class="button" id="startOverButton" ><a href="toplevel.html" class="startover default_button_text">Back</a></div>
 	<div id="OSCLogo"><a href="index.html"><img width="100%" height="100%" src ="img/OSCLogoSmall.png"></a></div>
     	  <img width="100%" height="100%" src ="video/CloudsPoster.png">	
 	<div id='media-player'>
@@ -58,10 +59,11 @@ var totalvids = 9; // set for each one
 		</video>
 	</div>
 	<div id='media-controls'>
-			<div class="button default_button_text previousButton" id="transportControls" onclick='prevVideo();'>Previous</div>
-			<div class="button default_button_text replayButton" id="transportControls" onclick='replayMedia();'>Replay</div>
-			<div class="button default_button_text nextButton" id="transportControls"  onclick='nextVideo();'>Next</div>
-
+		<div class = "transportControls">
+			<div class="button previousButton default_button_text" id="previousButton" onclick='prevVideo();'>Previous</div>
+			<div class="button default_button_text replayButton" id="replayButton" onclick='replayMedia();'>Replay</div>
+			<div class="button default_button_text nextButton" id="nextButton"  onclick='nextVideo();'>Next</div>
+		</div>
 	</div>
 		<div id='media-play-list'>
 			<h2>Instructions</h2>

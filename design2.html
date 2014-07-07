@@ -43,6 +43,7 @@ if (window.sidebar){
 // tell the mediaplayer.js what design we're on so the next/prev work right
 var design = 'dart';
 var totalvids = 9; // set for each one
+document.getElementById("previousButton").style.visibility = 'hidden' ;
 </script>
 
 </head>
@@ -58,10 +59,11 @@ var totalvids = 9; // set for each one
 		</video>
 	</div>
 	<div id='media-controls'>
-			<div class="button default_button_text previousButton" id="transportControls" onclick='prevVideo();'>Previous</div>
-			<div class="button default_button_text replayButton" id="transportControls" onclick='replayMedia();'>Replay</div>
-			<div class="button default_button_text nextButton" id="transportControls"  onclick='nextVideo();'>Next</div>
-
+		<div class = "transportControls">
+			<div class="button previousButton default_button_text" id="previousButton" onclick='prevVideo();'>Previous</div>
+			<div class="button default_button_text replayButton" id="replayButton" onclick='replayMedia();'>Replay</div>
+			<div class="button default_button_text nextButton" id="nextButton"  onclick='nextVideo();'>Next</div>
+		</div>
 	</div>
 		<div id='media-play-list'>
 			<h2>Instructions</h2>

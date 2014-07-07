@@ -75,9 +75,8 @@ body {
 	position: absolute;
     width: 12%;
 	height: 4%;
-	left: 0.5%;
-	left: 0.5%;
-	top: 95.5%;
+	left: 85%;
+	top: 3%;
 	z-index: 10;
     overflow: hidden;
 	vertical-align: middle;

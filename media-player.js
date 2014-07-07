@@ -79,7 +79,7 @@ function nextVideo() {
 function prevVideo() {
 	video_count = currentFileNum; 
 	video_count --;
-	if (video_count <= 1) video_count = 1;
+	if (video_count <= 1) video_count = 1
 	var readyVideo = "video/fullvids/" + design + "/step" + video_count + ".mp4";
 	loadVideo(readyVideo);
 }
@@ -100,7 +100,7 @@ function loadVideo() {
 		var file = arguments[i].split('.');
 		var filename = file[0].split("step");
 		currentFileNum = filename[1]
-		
+		setVisibility();
 		var ext = file[file.length - 1];
 		// Check if this media can be played
 		if (canPlayVideo(ext)) {
@@ -112,6 +112,18 @@ function loadVideo() {
 		}
 	}
 }
+
+function setVisibility(){ // Sets visibility of prev/next buttons
+	if (currentFileNum >= 1)
+			document.getElementById("previousButton").style.visibility = 'hidden' ;
+	if (currentFileNum > 1)
+			document.getElementById("previousButton").style.visibility = 'visible' ;
+
+	if (currentFileNum >= totalvids)
+			document.getElementById("nextButton").style.visibility = 'hidden' ;
+	if (currentFileNum < totalvids)
+			document.getElementById("nextButton").style.visibility = 'visible' ;
+		}
 
 // Checks if the browser can play this particular type of file or not
 function canPlayVideo(ext) {
